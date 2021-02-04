@@ -1,5 +1,7 @@
 let count = 0
 basic.showIcon(IconNames.Happy)
+basic.pause(5000)
+basic.clearScreen()
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         while (count < 6) {
@@ -22,6 +24,8 @@ basic.forever(function () {
         music.playMelody("F G A G G G - C ", 300)
         music.playMelody("C - D D D - - - ", 300)
         count = 0
+        basic.pause(5000)
+        basic.clearScreen()
     } else {
         if (input.buttonIsPressed(Button.B)) {
             count = 0
@@ -35,6 +39,8 @@ basic.forever(function () {
                 music.playMelody("G A B A G - D - ", 200)
                 music.playMelody("G A B A G - - - ", 200)
                 basic.showIcon(IconNames.Heart)
+                basic.pause(5000)
+                basic.clearScreen()
             }
         }
     }
