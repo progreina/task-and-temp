@@ -29,22 +29,33 @@ basic.forever(function () {
         count = 0
         basic.pause(5000)
         basic.clearScreen()
-    } else {
-        if (input.buttonIsPressed(Button.B)) {
-            count = 0
+    } else if (input.buttonIsPressed(Button.B)) {
+        count = 0
+        basic.clearScreen()
+        if (input.temperature() < 20) {
+            basic.showString("" + (input.temperature()))
+            music.playMelody("D F D F D F D F ", 300)
+            basic.showIcon(IconNames.Confused)
+            basic.pause(5000)
             basic.clearScreen()
-            if (input.temperature() < 20) {
-                basic.showString("" + (input.temperature()))
-                music.playMelody("D F D F D F D F ", 300)
-                basic.showIcon(IconNames.Confused)
-            } else {
-                basic.showString("" + (input.temperature()))
-                music.playMelody("G A B A G - D - ", 200)
-                music.playMelody("G A B A G - - - ", 200)
-                basic.showIcon(IconNames.Heart)
-                basic.pause(5000)
-                basic.clearScreen()
-            }
+        } else {
+            basic.showString("" + (input.temperature()))
+            music.playMelody("G A B A G - D - ", 200)
+            music.playMelody("G A B A G - - - ", 200)
+            basic.showIcon(IconNames.Heart)
+            basic.pause(5000)
+            basic.clearScreen()
+        }
+    } else {
+        if (input.logoIsPressed()) {
+            basic.showIcon(IconNames.Ghost)
+            music.playMelody("E - E E E - F G ", 300)
+            music.playMelody("G - G G G G G A ", 300)
+            music.playMelody("A - A F F - E F ", 300)
+            music.playMelody("F F - - C C D D ", 300)
+            music.playMelody("E E E - E E E - ", 300)
+            music.playMelody("E E E - E E E - ", 300)
+            music.playMelody("D - E - D C C C ", 300)
         }
     }
 })
