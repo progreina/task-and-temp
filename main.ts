@@ -1,5 +1,6 @@
 let count = 0
 basic.showIcon(IconNames.Happy)
+music.startMelody(music.builtInMelody(Melodies.Chase), MelodyOptions.Once)
 basic.pause(5000)
 basic.clearScreen()
 basic.forever(function () {
@@ -42,13 +43,19 @@ basic.forever(function () {
             basic.showString("" + (input.temperature()))
             music.playMelody("G A B A G - D - ", 200)
             music.playMelody("G A B A G - - - ", 200)
-            basic.showIcon(IconNames.Heart)
+            basic.showIcon(IconNames.Happy)
             basic.pause(5000)
             basic.clearScreen()
         }
     } else {
         if (input.logoIsPressed()) {
-            basic.showIcon(IconNames.Ghost)
+            basic.showLeds(`
+                . # . # .
+                . . . . .
+                # . . . #
+                # # # # #
+                . . . . .
+                `)
             music.playMelody("E - E E E - F G ", 300)
             music.playMelody("G - G G G G G A ", 300)
             music.playMelody("A - A F F - E F ", 300)
@@ -56,6 +63,8 @@ basic.forever(function () {
             music.playMelody("E E E - E E E - ", 300)
             music.playMelody("E E E - E E E - ", 300)
             music.playMelody("D - E - D C C C ", 300)
+            basic.pause(5000)
+            basic.clearScreen()
         }
     }
 })
