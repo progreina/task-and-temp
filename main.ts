@@ -5,6 +5,9 @@ basic.clearScreen()
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         while (count < 6) {
+            if (input.runningTime() > 60000) {
+                basic.clearScreen()
+            }
             if (input.buttonIsPressed(Button.A)) {
                 count += 1
                 basic.showNumber(count)
