@@ -1,5 +1,5 @@
 {
-    "name": "タスク管理と温度計",
+    "name": "タスク管理、温度計、じゃんけん",
     "description": "",
     "dependencies": {
         "core": "*",
