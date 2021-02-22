@@ -156,7 +156,7 @@ function music2 () {
     basic.clearScreen()
 }
 let janken = 0
-let music4 = 0
+let PlayMusic = 0
 let count = 0
 count = 0
 music.startMelody(music.builtInMelody(Melodies.Chase), MelodyOptions.Once)
@@ -177,14 +177,12 @@ basic.forever(function () {
                 basic.clearScreen()
             }
         }
-        music4 = randint(0, 2)
+        PlayMusic = randint(0, 2)
         basic.showString("OK")
-        if (music4 == 0) {
+        if (PlayMusic == 0) {
             music1()
-        } else if (music4 == 1) {
+        } else if (PlayMusic == 1) {
             music2()
-        } else {
-            music3()
         }
     } else if (input.buttonIsPressed(Button.B)) {
         count = 0
@@ -251,6 +249,7 @@ basic.forever(function () {
             # . . . #
             # # # # #
             `)
+        music.setTempo(120)
         music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
         basic.pause(5000)
         basic.clearScreen()
