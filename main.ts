@@ -1,6 +1,164 @@
+function music1 () {
+    basic.showIcon(IconNames.Chessboard)
+    music.setTempo(150)
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Eighth))
+    music.rest(music.beat(BeatFraction.Eighth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Eighth))
+    music.rest(music.beat(BeatFraction.Eighth))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Eighth))
+    music.rest(music.beat(BeatFraction.Eighth))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Whole))
+    music.playTone(523, music.beat(BeatFraction.Whole))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(392, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Whole))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(494, music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Quarter))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(294, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(330, music.beat(BeatFraction.Whole))
+    count = 0
+    basic.pause(5000)
+    basic.clearScreen()
+}
+function music3 () {
+    basic.showIcon(IconNames.Ghost)
+    music.setTempo(300)
+    music.playMelody("D - D A G - F - ", 300)
+    music.playMelody("E - E E G - F E ", 300)
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.playTone(698, music.beat(BeatFraction.Whole))
+    music.playTone(659, music.beat(BeatFraction.Whole))
+    music.playTone(698, music.beat(BeatFraction.Whole))
+    music.playTone(659, music.beat(BeatFraction.Whole))
+    music.playTone(698, music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Whole))
+    music.playTone(294, music.beat(BeatFraction.Whole))
+    music.playTone(698, music.beat(BeatFraction.Whole))
+    music.playTone(659, music.beat(BeatFraction.Whole))
+    music.playTone(698, music.beat(BeatFraction.Whole))
+    music.playTone(659, music.beat(BeatFraction.Whole))
+    music.playTone(698, music.beat(BeatFraction.Whole))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(349, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(392, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(587, music.beat(BeatFraction.Half))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playMelody("G F E C - - - - ", 300)
+}
+function music2 () {
+    basic.showIcon(IconNames.Heart)
+    music.playMelody("E - E E E - F G ", 300)
+    music.playMelody("G - G G G G G A ", 300)
+    music.playMelody("A - A F F - E F ", 300)
+    music.playMelody("F F - - C C D D ", 300)
+    music.playMelody("E E E - E E E - ", 300)
+    music.playMelody("E E E - E E E - ", 300)
+    music.playMelody("D - E - D C C C ", 300)
+    count = 0
+    basic.pause(5000)
+    basic.clearScreen()
+}
 let janken = 0
-let music2 = 0
+let music4 = 0
 let count = 0
+count = 0
 music.startMelody(music.builtInMelody(Melodies.Chase), MelodyOptions.Once)
 basic.showIcon(IconNames.Happy)
 basic.pause(9000)
@@ -19,35 +177,14 @@ basic.forever(function () {
                 basic.clearScreen()
             }
         }
-        music2 = randint(0, 1)
+        music4 = randint(0, 2)
         basic.showString("OK")
-        if (music2 == 0) {
-            basic.showIcon(IconNames.Chessboard)
-            music.playMelody("- C - C - A - G ", 300)
-            music.playMelody("A C5 A G A A C G ", 300)
-            music.playMelody("A C5 A G A A C C ", 300)
-            music.playMelody("F F C C F G F C5 ", 300)
-            music.setTempo(300)
-            music.playTone(523, music.beat(BeatFraction.Whole))
-            music.playTone(466, music.beat(BeatFraction.Double))
-            music.playMelody("A G G F F F - F ", 300)
-            music.playMelody("F G A G G G - C ", 300)
-            music.playMelody("C - D D D - - - ", 300)
-            count = 0
-            basic.pause(5000)
-            basic.clearScreen()
+        if (music4 == 0) {
+            music1()
+        } else if (music4 == 1) {
+            music2()
         } else {
-            basic.showIcon(IconNames.Heart)
-            music.playMelody("E - E E E - F G ", 300)
-            music.playMelody("G - G G G G G A ", 300)
-            music.playMelody("A - A F F - E F ", 300)
-            music.playMelody("F F - - C C D D ", 300)
-            music.playMelody("E E E - E E E - ", 300)
-            music.playMelody("E E E - E E E - ", 300)
-            music.playMelody("D - E - D C C C ", 300)
-            count = 0
-            basic.pause(5000)
-            basic.clearScreen()
+            music3()
         }
     } else if (input.buttonIsPressed(Button.B)) {
         count = 0
@@ -71,17 +208,16 @@ basic.forever(function () {
         if (janken == 0) {
             basic.showString("G")
             soundExpression.happy.play()
-            basic.pause(2000)
             basic.showIcon(IconNames.Asleep)
+            basic.pause(2000)
         } else if (janken == 1) {
             basic.showString("C")
             soundExpression.slide.play()
-            basic.pause(2000)
             basic.showIcon(IconNames.Surprised)
+            basic.pause(2000)
         } else {
             basic.showString("P")
             soundExpression.yawn.play()
-            basic.pause(2000)
             basic.showLeds(`
                 . # . # .
                 . . . . .
@@ -89,10 +225,11 @@ basic.forever(function () {
                 . # . # .
                 . . # . .
                 `)
+            basic.pause(2000)
         }
         basic.clearScreen()
-        while (!(input.buttonIsPressed(Button.AB))) {
-            if (input.buttonIsPressed(Button.AB)) {
+        while (!(input.pinIsPressed(TouchPin.P0))) {
+            if (input.buttonIsPressed(Button.A)) {
                 basic.showIcon(IconNames.Sad)
                 soundExpression.sad.play()
                 basic.pause(2000)
@@ -104,21 +241,16 @@ basic.forever(function () {
                 basic.pause(2000)
                 basic.clearScreen()
                 break;
-            } else {
-                if (input.pinIsPressed(TouchPin.P0)) {
-                    break;
-                }
             }
         }
     } else if (input.logoIsPressed()) {
         basic.showLeds(`
             . # . # .
             . . . . .
+            # # # # #
             # . . . #
             # # # # #
-            . . . . .
             `)
-        music.setTempo(120)
         music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
         basic.pause(5000)
         basic.clearScreen()
